@@ -4,7 +4,7 @@
   "description": "Employee tracker",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/sylverainv/Command-line-tracker#readme",
   "dependencies": {
+    "console.table": "^0.10.0",
     "inquirer": "^8.2.0",
-    "msql": "^1.0.3",
     "mysql": "^2.18.1"
   }
 }
