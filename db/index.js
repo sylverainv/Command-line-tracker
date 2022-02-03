@@ -81,4 +81,20 @@ const initialAction = async () => {
         initialAction();
     };
 }
-
+// Selection to view all of the employees.
+const employeeView = async () => {
+    console.log('Employee View');
+    try {
+        let query = 'SELECT * FROM employee';
+        connection.query(query, function (err, res) {
+            if (err) throw err;
+            let employeeArray = [];
+            res.forEach(employee => employeeArray.push(employee));
+            console.table(employeeArray);
+            initialAction();
+        });
+    } catch (err) {
+        console.log(err);
+        initialAction();
+    };
+}
