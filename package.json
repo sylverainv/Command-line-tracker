@@ -1,17 +1,24 @@
 {
-  "name": "employee-tracker",
+  "name": "command-line-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Employee tracker",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylverainv/Command-line-tracker.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylverainv/Command-line-tracker/issues"
+  },
+  "homepage": "https://github.com/sylverainv/Command-line-tracker#readme",
   "dependencies": {
-    "asciiart-logo": "^0.2.6",
-    "console.table": "^0.10.0",
-    "inquirer": "^7.0.0",
-    "mysql2": "^2.1.0"
+    "inquirer": "^8.2.0",
+    "msql": "^1.0.3",
+    "mysql": "^2.18.1"
   }
 }
